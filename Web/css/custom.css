@@ -5,3 +5,7 @@
  * $conf['settings']['css.extension.file'] = '/Web/css/custom.css';
  */
 
+/* Hide language switcher, as we customized German translations to our usecase, outdating others. */
+#change-language {
+  display: none;
+}
