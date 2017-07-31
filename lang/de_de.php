@@ -389,8 +389,8 @@ class de_de extends en_us
 		$strings['SortOrder'] = 'Sortierung';
 		$strings['Title'] = 'Titel';
 		$strings['AdditionalAttributes'] = 'Zusätzliche Attribute';
-		$strings['True'] = 'Wahr';
-		$strings['False'] = 'Falsch';
+		$strings['True'] = 'Ja';
+		$strings['False'] = 'Nein';
 		$strings['ForgotPasswordEmailSent'] = 'Eine E-Mail zum Zurücksetzen Ihres Passworts ist an Ihre Adresse gesendet worden';
 		$strings['ActivationEmailSent'] = 'Sie werden in Kürze eine Aktivierungs-E-Mail erhalten.';
 		$strings['AccountActivationError'] = 'Sorry, wir können Ihr Benutzerkonto nicht aktivieren.';
