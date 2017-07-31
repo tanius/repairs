@@ -6,7 +6,6 @@
 /plugins/Authentication/Ldap/Ldap.config.php
 /plugins/Authentication/Drupal/Drupal.config.php
 /Web/uploads
-/Web/img/custom-logo.png
 /lib/external/phpqrcode/cache/*.dat
 /lib/external/phpqrcode/cache/mask_0/*.dat
 /lib/external/phpqrcode/cache/mask_1/*.dat
