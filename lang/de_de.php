@@ -746,6 +746,7 @@ class de_de extends en_us
 		$strings['ManageResourceTypes'] = 'Ressourcen-Typen';
 		$strings['ManageResourceStatus'] = 'Ressourcen-Statusangaben';
 		$strings['ReservationColors'] = 'Reservierungsfarben';
+		$strings['SearchReservations'] = 'Reservierungen finden';
 		// End Page Titles
 
 		// Day representations
@@ -847,7 +848,7 @@ class de_de extends en_us
 		// The full month name
 		$months['full'] = array('Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember');
 		// The three letter month name
-		$months['abbr'] = array('Jan', 'Feb', 'Mrz', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez');
+		$months['abbr'] = array('Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez');
 
 		$this->Months = $months;
 
