@@ -1536,6 +1536,7 @@ a.toggle-sidebar {
 }
 .customAttributes {
   margin-top: 10px;
+  margin-left: 139px;
 }
 ul.jqtree-tree li.jqtree-selected > .jqtree-element,
 ul.jqtree-tree .jqtree-toggler {
