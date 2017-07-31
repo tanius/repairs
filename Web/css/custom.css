@@ -9,3 +9,8 @@
 #change-language {
   display: none;
 }
+
+/* Hide the "Schedule -> Find a time" menu item, since we have no use for it in our case. */
+#navFindATime {
+  display: none;
+}
