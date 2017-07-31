@@ -1536,7 +1536,14 @@ a.toggle-sidebar {
 }
 .customAttributes {
   margin-top: 10px;
+}
+/* Left align with other column on resource panels (and only there). */
+#list-resources-panel .customAttributes {
   margin-left: 139px;
+}
+/* "Additional Attributes" string on reservation edit form, formatted equiv. to a field label. */
+.customAttributes > span {
+  font-weight: 700;
 }
 ul.jqtree-tree li.jqtree-selected > .jqtree-element,
 ul.jqtree-tree .jqtree-toggler {
