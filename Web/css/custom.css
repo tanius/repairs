@@ -1,0 +1,7 @@
+/*
+ * Styles specific to a local installation.
+ *
+ * Configure to be utilized in /config/config.php as follows:
+ * $conf['settings']['css.extension.file'] = '/Web/css/custom.css';
+ */
+
