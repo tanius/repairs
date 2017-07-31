@@ -23,8 +23,8 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
     {elseif $searchmode}
         <label class="customAttribute" for="{$attributeId}">{$attribute->Label()}</label>
         <select id="{$attributeId}" name="{$attributeName}" class="customAttribute form-control {$inputClass}">
-            <option value="">--</option>
-            <option value="0" {if $attribute->Value() == "0"}selected="selected"{/if}>{translate key=No}</option>
+            {* For checkbox custom attributes, value "0" is never recorded in the DB. Only "1". No record means "NULL" in joins, not "0" *}
+            <option value=""  {if $attribute->Value() ==  ""}selected="selected"{/if}>{translate key=AllResults}</option>
             <option value="1" {if $attribute->Value() == "1"}selected="selected"{/if}>{translate key=Yes}</option>
         </select>
     {else}

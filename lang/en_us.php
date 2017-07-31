@@ -414,6 +414,7 @@ class en_us extends Language
 		$strings['CurrentWeek'] = 'Current Week';
 		$strings['CurrentMonth'] = 'Current Month';
 		$strings['AllTime'] = 'All Time';
+		$strings['AllResults'] = 'All Results';
 		$strings['FilterBy'] = 'Filter By';
 		$strings['Select'] = 'Select';
 		$strings['List'] = 'List';

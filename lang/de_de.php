@@ -413,6 +413,7 @@ class de_de extends en_us
 		$strings['CurrentWeek'] = 'Diese Woche';
 		$strings['CurrentMonth'] = 'Dieser Monat';
 		$strings['AllTime'] = 'Alle Zeiträume';
+		$strings['AllResults'] = 'Alle Ergebnisse';
 		$strings['FilterBy'] = 'Filtern von';
 		$strings['Select'] = 'Auswahl';
 		$strings['List'] = 'Liste';
