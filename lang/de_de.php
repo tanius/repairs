@@ -90,7 +90,6 @@ class de_de extends en_us
 		$strings['Password'] = 'Passwort';
 		$strings['PasswordConfirmation'] = 'Passwort wiederholen';
 		$strings['DefaultPage'] = 'Standard Startseite';
-		$strings['MyCalendar'] = 'Mein Kalender';
 		$strings['ScheduleCalendar'] = 'Werkstattplan Kalender';
 		$strings['Registration'] = 'Registrierung';
 		$strings['NoAnnouncements'] = 'Keine Ankündigungen';
@@ -717,14 +716,14 @@ class de_de extends en_us
 		$strings['EditProfile'] = 'Meine persönlichen Daten bearbeiten';
 		$strings['FindAnOpening'] = 'Einen Anfang finden';
 		$strings['OpenInvitations'] = 'Offene Einladungen';
-		$strings['MyCalendar'] = 'Mein Kalender';
-		$strings['ResourceCalendar'] = 'Ressourcen Kalender';
+		$strings['MyCalendar'] = 'Meine Werkstattaufträge';
+		$strings['ResourceCalendar'] = 'Alle Werkstattaufträge';
 		$strings['Reservation'] = 'Neuer Werkstattauftrag';
 		$strings['Install'] = 'Installation';
 		$strings['ChangePassword'] = 'Passwort ändern';
-		$strings['MyAccount'] = 'Mein Benutzerkonto';
+		$strings['MyAccount'] = 'Benutzerkonto';
 		$strings['Profile'] = 'Persönliche Daten';
-		$strings['ApplicationManagement'] = 'Anwendungsverwaltung';
+		$strings['ApplicationManagement'] = 'Admin';
 		$strings['ForgotPassword'] = 'Passwort vergessen';
 		$strings['NotificationPreferences'] = 'Benachrichtigungseinstellungen';
 		$strings['ManageAnnouncements'] = 'Ankündigungen';

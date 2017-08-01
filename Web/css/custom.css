@@ -14,3 +14,9 @@
 #navFindATime {
   display: none;
 }
+
+/* Hide the "Schedule -> Bookings" menu item, since we have no use for it in our case. */
+#navBookings {
+  display: none;
+}
+

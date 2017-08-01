@@ -187,38 +187,38 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                 <ul class="nav navbar-nav">
                     {if $LoggedIn}
                         <li id="navDashboard"><a href="{$Path}{Pages::DASHBOARD}">{translate key="Dashboard"}</a></li>
-                        <li class="dropdown" id="navMyAccountDropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="MyAccount"} <b
-                                        class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li id="navProfile"><a href="{$Path}{Pages::PROFILE}">{translate key="Profile"}</a></li>
-                                <li id="navPassword"><a
-                                            href="{$Path}{Pages::PASSWORD}">{translate key="ChangePassword"}</a></li>
-                                <li id="navNotification">
-                                    <a href="{$Path}{Pages::NOTIFICATION_PREFERENCES}">{translate key="NotificationPreferences"}</a>
-                                </li>
-                                {if $ShowParticipation && $AllowParticipation}
-                                    <li id="navInvitations"><a
-                                                href="{$Path}{Pages::PARTICIPATION}">{translate key="OpenInvitations"}</a>
-                                    </li>
-                                {/if}
-                            </ul>
-                        </li>
                         <li class="dropdown" id="navScheduleDropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Schedule"} <b
                                         class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li id="navBookings"><a href="{$Path}{Pages::SCHEDULE}">{translate key="Bookings"}</a>
                                 </li>
-                                <li id="navMyCalendar"><a
-                                            href="{$Path}{Pages::MY_CALENDAR}">{translate key="MyCalendar"}</a></li>
                                 <li id="navResourceCalendar"><a
                                             href="{$Path}{Pages::CALENDAR}">{translate key="ResourceCalendar"}</a></li>
+                                <li id="navMyCalendar"><a
+                                            href="{$Path}{Pages::MY_CALENDAR}">{translate key="MyCalendar"}</a></li>
                                 <!--<li class="menuitem"><a href="#">{translate key="Current Status"}</a></li>-->
                                 <li id="navFindATime"><a href="{$Path}{Pages::OPENINGS}">{translate key="FindATime"}</a></li>
                                 <li id="navFindAReservation"><a href="{$Path}{Pages::SEARCH_RESERVATIONS}">{translate key="SearchReservations"}</a></li>
                             </ul>
                         </li>
+                        {if $CanViewReports}
+                            <li class="dropdown" id="navReportsDropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Reports"} <b
+                                            class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li id="navGenerateReport">
+                                        <a href="{$Path}reports/{Pages::REPORTS_GENERATE}">{translate key=GenerateReport}</a>
+                                    </li>
+                                    <li id="navSavedReports">
+                                        <a href="{$Path}reports/{Pages::REPORTS_SAVED}">{translate key=MySavedReports}</a>
+                                    </li>
+                                    <li id="navCommonReports">
+                                        <a href="{$Path}reports/{Pages::REPORTS_COMMON}">{translate key=CommonReports}</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        {/if}
                         {if $CanViewAdmin}
                             <li class="dropdown" id="navApplicationManagementDropdown">
                                 <a href="#" class="dropdown-toggle"
@@ -320,23 +320,23 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                 </ul>
                             </li>
                         {/if}
-                        {if $CanViewReports}
-                            <li class="dropdown" id="navReportsDropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Reports"} <b
-                                            class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li id="navGenerateReport">
-                                        <a href="{$Path}reports/{Pages::REPORTS_GENERATE}">{translate key=GenerateReport}</a>
+                        <li class="dropdown" id="navMyAccountDropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="MyAccount"} <b
+                                        class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li id="navProfile"><a href="{$Path}{Pages::PROFILE}">{translate key="Profile"}</a></li>
+                                <li id="navPassword"><a
+                                            href="{$Path}{Pages::PASSWORD}">{translate key="ChangePassword"}</a></li>
+                                <li id="navNotification">
+                                    <a href="{$Path}{Pages::NOTIFICATION_PREFERENCES}">{translate key="NotificationPreferences"}</a>
+                                </li>
+                                {if $ShowParticipation && $AllowParticipation}
+                                    <li id="navInvitations"><a
+                                                href="{$Path}{Pages::PARTICIPATION}">{translate key="OpenInvitations"}</a>
                                     </li>
-                                    <li id="navSavedReports">
-                                        <a href="{$Path}reports/{Pages::REPORTS_SAVED}">{translate key=MySavedReports}</a>
-                                    </li>
-                                    <li id="navCommonReports">
-                                        <a href="{$Path}reports/{Pages::REPORTS_COMMON}">{translate key=CommonReports}</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        {/if}
+                                {/if}
+                            </ul>
+                        </li>
                     {/if}
 
                 </ul>
