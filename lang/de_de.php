@@ -703,7 +703,7 @@ class de_de extends en_us
 		$strings['ManageUsers'] = 'Benutzer';
 		$strings['ManageGroups'] = 'Gruppen';
 		$strings['ManageQuotas'] = 'Zeitkontingente';
-		$strings['ManageBlackouts'] = 'Sperrzeiten verwalten';
+		$strings['ManageBlackouts'] = 'Sperrzeiten';
 		$strings['MyDashboard'] = 'Meine Übersicht';
 		$strings['ServerSettings'] = 'Server Einstellungen';
 		$strings['Dashboard'] = 'Übersicht';
