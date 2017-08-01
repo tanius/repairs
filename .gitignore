@@ -17,3 +17,4 @@
 /lib/external/phpqrcode/cache/mask_7/*.dat
 /config/test.config.php
 /config/test.tenants.config.php
+/stats
