@@ -2,7 +2,9 @@
 /.idea
 /tpl_c
 /config/config.php
-/plugins/Authentication/ActiveDirectory/ActiveDirectory.config.php
+/config/config1*.php
+/plugins/Authentication/ActiveDirectory/ActiveDirectory.config*.php
+/plugins/Authentication/CAS/CAS.config*.php
 /plugins/Authentication/Ldap/Ldap.config.php
 /plugins/Authentication/Drupal/Drupal.config.php
 /Web/uploads
@@ -18,3 +20,4 @@
 /config/test.config.php
 /config/test.tenants.config.php
 /stats
+/uploads
