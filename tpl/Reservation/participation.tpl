@@ -38,6 +38,9 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 		<div id="participantList">
 		</div>
 	</div>
+
+	{* Local change: Hide all invitee form elements. We only need the participants elements. *}
+	{*
 	<div class="row">
 		<label for="inviteeAutocomplete">{translate key="InvitationList"}</label>
 		<br/>
@@ -132,6 +135,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 		</div>
 
 	</div>
+        *}
 
 	<div class="modal fade" id="participantDialog" tabindex="-1" role="dialog" aria-labelledby="participantModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
