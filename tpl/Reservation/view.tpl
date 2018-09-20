@@ -32,12 +32,17 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 				<div id="reservationDetails" class="{$detailsCol}">
 					<div class="col-xs-12">
 						<label>{translate key='User'}</label>
+						{* Local change: Always display user names. *}
+						<a href="#" class="bindableUser" data-userid="{$UserId}">{$ReservationUserName}</a>
+                                                <input id="userId" type="hidden" value="{$UserId}"/>
+						{*
 						{if $ShowUserDetails && $ShowReservationDetails}
 							<a href="#" class="bindableUser" data-userid="{$UserId}">{$ReservationUserName}</a>
 							<input id="userId" type="hidden" value="{$UserId}"/>
 						{else}
 							{translate key=Private}
 						{/if}
+						*}
 					</div>
 
 					<div class="col-xs-12">

@@ -312,7 +312,9 @@ class ReservationDetailsBinder implements IReservationComponentBinder
 		$this->page->SetAttachments($this->reservationView->Attachments);
 
 		$showUser = $this->privacyFilter->CanViewUser($initializer->CurrentUser(), $this->reservationView);
+#		$showUser = true;
 		$showDetails = $this->privacyFilter->CanViewDetails($initializer->CurrentUser(), $this->reservationView);
+#		$showDetails = true;
 
 		$initializer->ShowUserDetails($showUser);
 		$initializer->ShowReservationDetails($showDetails);

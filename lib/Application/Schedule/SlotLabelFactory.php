@@ -79,7 +79,10 @@ class SlotLabelFactory
 
 		if (($shouldHideUser || $shouldHideDetails) && (is_null($this->user) || ($this->user->UserId != $reservation->UserId && !$this->user->IsAdminForGroup($reservation->OwnerGroupIds()))))
 		{
-			return '';
+			# Local change: When the reservation details are hidden (esp. due to config file setting 
+			# hide.reservation.details), still show the booked resource in the calendar item label.
+			# return '';
+			$format = '{resourcename}';
 		}
 
 		if (empty($format))

@@ -21,11 +21,15 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 
         {capture "name"}
             <div class="user">
+		{* Local change: Always show user names. *}
+		{$fullName}
+		{*
                 {if $hideUserInfo || $hideDetails}
                     {translate key=Private}
                 {else}
                     {$fullName}
                 {/if}
+		*}
             </div>
         {/capture}
         {$formatter->Add('name', $smarty.capture.name)}
