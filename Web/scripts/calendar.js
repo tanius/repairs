@@ -53,6 +53,7 @@ function Calendar(opts) {
             monthNames: _options.monthNames,
             monthNamesShort: _options.monthNamesShort,
             timeFormat: _options.timeFormat,
+            displayEventEnd: true,
             firstDay: _options.firstDay,
             loading: function (isLoading) {
                 if (isLoading) {
