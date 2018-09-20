@@ -20,3 +20,7 @@
   display: none;
 }
 
+/* Hide the "Schedule -> Find Reservations" menu item until an issue with its templates is fixed upstream. */
+#navFindAReservation {
+  display: none;
+}
