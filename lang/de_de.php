@@ -529,7 +529,7 @@ class de_de extends en_us
 		$strings['UserImportInstructions'] = 'Eine CSV-Datei ist erforderlich. Die Felder für Benutzername und E-Mail-Adresse müssen ausgefüllt sein. Wenn die anderen Felder frei sind, werden die Standardwerte gesetzt und das Passwort \'password\' vergeben. Das vorgegebene Template dient als Beispiel.';
 		$strings['RowsImported'] = 'Zeilen importiert';
 		$strings['RowsSkipped'] = 'Zeilen übersprungen';
-		$strings['Columns'] = 'Zeilen';
+		$strings['Columns'] = 'Spalten';
 		$strings['Reserve'] = 'Reservieren';
 		$strings['AllDay'] = 'Ganzer Tag';
 		$strings['Everyday'] = 'Jeden Tag';
