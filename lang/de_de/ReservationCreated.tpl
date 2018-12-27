@@ -51,7 +51,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 	{/foreach}
 
 	{if $Accessories|count > 0}
-		<br/>Zubehör:<br/>
+		<br/>Ersatzteile:<br/>
 		{foreach from=$Accessories item=accessory}
 			({$accessory->QuantityReserved}) {$accessory->Name}<br/>
 		{/foreach}
