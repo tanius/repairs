@@ -974,6 +974,16 @@ class GetAccessoryByIdCommand extends SqlCommand
     }
 }
 
+// Added by matthias@ansorgs.de 2018-12-26.
+class GetAccessoryConsumptionCommand extends SqlCommand
+{
+    public function __construct($accessoryId)
+    {
+        parent::__construct(Queries::GET_ACCESSORY_CONSUMPTION);
+        $this->AddParameter(new Parameter(ParameterNames::ACCESSORY_ID, $accessoryId));
+    }
+}
+
 class GetAccessoryResources extends SqlCommand
 {
     public function __construct($accessoryId)

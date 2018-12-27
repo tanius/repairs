@@ -1150,6 +1150,22 @@ class Queries
 			'SELECT user_id, password, salt, legacypassword
 		FROM users
 		WHERE (username = @username OR email = @username) AND status_id = 1';
+
+	// Added by matthias@ansorgs.de 2018-12-26.
+	// Determine the consumption of one accessory (= usage in reservations that are marked "completed").
+        // The accessory is identified by its ID "@accessoryid" and the number is returned in column "consumption".
+	// status_id == 2 means "reservation is deleted".
+	const GET_ACCESSORY_CONSUMPTION = 
+			'SELECT SUM(ar.quantity) AS consumption
+                FROM reservation_instances ri
+                INNER JOIN reservation_series rs ON ri.series_id = rs.series_id
+		INNER JOIN custom_attribute_values cav ON rs.series_id = cav.entity_id
+                INNER JOIN reservation_accessories ar ON ar.series_id = rs.series_id
+                WHERE 
+			rs.status_id <> 2 AND
+			ar.accessory_id = @accessoryid AND
+			cav.custom_attribute_id = 5 AND
+			cav.attribute_value = 1';
 }
 
 class QueryBuilder

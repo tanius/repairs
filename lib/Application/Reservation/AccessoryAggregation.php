@@ -93,6 +93,11 @@ class AccessoryAggregation
 	 */
 	public function GetQuantity($accessoryId)
 	{
+		// Added by matthias@ansorgs.de 2018-12-26
+		return $this->GetConsumption($accessoryId);
+
+		// Original implementation, disabled by matthias@ansorgs.de 2018-12-26
+/*
 		$quantity = 0;
 
 		foreach ($this->quantities[$accessoryId] as $date => $q)
@@ -103,5 +108,25 @@ class AccessoryAggregation
 			}
 		}
 		return $quantity;
+*/
 	}
+
+	// Added by matthias@ansorgs.de 2018-12-26.
+	public function GetConsumption($accessoryId)
+	{
+		$getConsumptionCommand = new GetAccessoryConsumptionCommand($accessoryId);
+
+                $result = ServiceLocator::GetDatabase()->Query($getConsumptionCommand);
+
+                $consumption = 0;
+
+                $row = $result->GetRow();
+		if (!empty($row['consumption'])) {
+			$consumption = $row['consumption'];
+		}
+                $result->Free();
+
+                return $consumption;
+	}
+
 }
