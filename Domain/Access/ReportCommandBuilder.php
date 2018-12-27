@@ -268,8 +268,13 @@ class ReportCommandBuilder
 	 */
 	public function OfAccessories()
 	{
+		// Added by matthias@ansorgs.de 2018-12-27
+                $this->joinResources = true;
+                $this->listResources = true;
+
 		$this->joinAccessories = true;
 		$this->listAccessories = true;
+
 		return $this;
 	}
 
