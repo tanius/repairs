@@ -26,6 +26,8 @@ require_once(ROOT_DIR . 'Domain/Values/ResourceStatus.php');
 require_once(ROOT_DIR . 'Domain/Values/AccountStatus.php');
 require_once(ROOT_DIR . 'Domain/Values/AccountStatus.php');
 
+require_once(ROOT_DIR . 'lib/Database/Commands/Commands.php');
+
 class ResourceRepository implements IResourceRepository
 {
 	/**
@@ -305,6 +307,30 @@ class ResourceRepository implements IResourceRepository
 		}
 
 		$reader->Free();
+
+		// Added by matthias@ansorgs.de 2018-12-28.
+		// We changed the meaning of the "Available Quantity" column to now also consider consumption of the 
+		// accessory in all previous reservations marked as "completed". So, go through all accessoried and 
+		// deduct that from the "total ever stock amount" saved in the database.
+		foreach ($accessories as $accessory)
+		{
+	                $getConsumptionCommand = new GetAccessoryConsumptionCommand($accessory->Id);
+
+	                $result = ServiceLocator::GetDatabase()->Query($getConsumptionCommand);
+
+	                $consumption = 0;
+        	        $row = $result->GetRow();
+                	if (!empty($row['consumption'])) {
+                        	$consumption = $row['consumption'];
+                	}
+
+	                $result->Free();
+			
+			// An empty value here would indicate "unlimited quantity", so no need to consider consumption.
+			if (!empty($accessory->QuantityAvailable)) {
+				$accessory->QuantityAvailable = $accessory->QuantityAvailable - $consumption;
+			}
+		}
 
 		return $accessories;
 	}

@@ -88,7 +88,10 @@ function AccessoryManagement(opts) {
 	var editAccessory = function() {
 		var accessory = getActiveAccessory();
 		elements.editName.val(accessory.name);
-		elements.editQuantity.val(accessory.quantity);
+		// For use with stock management, this field will now be interpreted as a relative change of stock level.
+		// For example, "10" or "-10". So, no need anymore to initialize it with the current stock level.
+		// changed by matthias@ansorgs.de 2018-12-29
+		// elements.editQuantity.val(accessory.quantity);
 
 		if (accessory.quantity == '')
 		{

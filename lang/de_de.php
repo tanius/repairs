@@ -229,8 +229,9 @@ class de_de extends en_us
 		$strings['ResourceList'] = 'Zu reservierende Ressourcen';
 		$strings['Accessories'] = 'Ersatzteile';
 		$strings['InvitationList'] = 'Eingeladene';
-		$strings['AccessoryName'] = 'Ersatzteil Name';
-		$strings['QuantityAvailable'] = 'Verfügbare Menge';
+		$strings['AccessoryName'] = 'Ersatzteil-Name';
+		$strings['QuantityAvailable'] = 'Lagerbestand';
+		$strings['ChangeQuantityAvailable'] = 'Lagerbestand ändern (+ oder -)';
 		$strings['Resources'] = 'Ressourcen';
 		$strings['Participants'] = 'Teilnehmer';
 		$strings['User'] = 'Benutzer';

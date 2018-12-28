@@ -18,6 +18,8 @@
  * along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+require_once(ROOT_DIR . 'lib/Database/Commands/Commands.php');
+
 class AccessoryAggregation
 {
 	private $quantities = array();

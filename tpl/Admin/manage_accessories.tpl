@@ -117,12 +117,12 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 							<label for="editName">{translate key=AccessoryName}</label>
 							<input id="editName" type="text" class="form-control required" maxlength="85" {formname key=ACCESSORY_NAME} />
 						</div>
-						<div class="form-group col-xs-4">
-							<label for="editQuantity">{translate key='QuantityAvailable'}</label>
-							<input id="editQuantity" type="number" min="0" class="form-control"
-								   disabled="disabled" {formname key=ACCESSORY_QUANTITY_AVAILABLE} />
+						<div class="form-group col-xs-6">
+							<label for="editQuantity">{translate key='ChangeQuantityAvailable'}</label>
+							<input id="editQuantity" type="number" class="form-control"
+								   disabled="disabled" value="0" {formname key=ACCESSORY_QUANTITY_AVAILABLE} />
 						</div>
-						<div class="form-group col-xs-8">
+						<div class="form-group col-xs-6">
 							<div class="checkbox checkbox-align">
 								<input type="checkbox" id="chkUnlimitedEdit" class="unlimited" name="chkUnlimited" checked="checked"/>
 								<label for="chkUnlimitedEdit">{translate key=Unlimited}</label>

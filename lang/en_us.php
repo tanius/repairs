@@ -234,6 +234,7 @@ class en_us extends Language
 		$strings['InvitationList'] = 'Invitees';
 		$strings['AccessoryName'] = 'Accessory Name';
 		$strings['QuantityAvailable'] = 'Quantity Available';
+		$strings['ChangeQuantityAvailable'] = 'Change Quantity Available (+ or -)';
 		$strings['Resources'] = 'Resources';
 		$strings['Participants'] = 'Participants';
 		$strings['User'] = 'User';
