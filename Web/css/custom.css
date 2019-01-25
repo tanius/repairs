@@ -10,6 +10,18 @@
   display: none;
 }
 
+/* Hide the "Overview" menu item, since we simply do not need it and it also shows information 
+   about resources that users should not be able to see. */
+#navDashboard {
+  display: none;
+}
+
+/* Hide the "Schedule -> My Calendar" menu item. It is confusing as people will wonder why the 
+   calendar is empty when they accidentally arrive here. */
+#navMyCalendar {
+  display: none;
+}
+
 /* Hide the "Schedule -> Find a time" menu item, since we have no use for it in our case. */
 #navFindATime {
   display: none;
