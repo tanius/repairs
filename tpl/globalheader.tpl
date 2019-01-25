@@ -181,7 +181,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{$HomeUrl}">{html_image src="$LogoUrl?{$Version}" alt="$Title" class="logo"}</a>
+                <span class="navbar-brand">{html_image src="$LogoUrl?{$Version}" alt="$Title" class="logo"}</span>
             </div>
             <div class="collapse navbar-collapse" id="booked-navigation">
                 <ul class="nav navbar-nav">
