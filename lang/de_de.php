@@ -152,8 +152,8 @@ class de_de extends en_us
 		$strings['NoLocationLabel'] = '(keine Position festgelegt)';
 		$strings['Contact'] = 'Kontakt';
 		$strings['NoContactLabel'] = '(keine Kontaktinformationen)';
-		$strings['Description'] = 'Beschreibung';
-		$strings['NoDescriptionLabel'] = '(keine Beschreibung)';
+		$strings['Description'] = 'Fahrgestell';
+		$strings['NoDescriptionLabel'] = '(keine Informationen zu: Fahrgestell)';
 		$strings['Notes'] = 'Notizen';
 		$strings['NoNotesLabel'] = '(keine Notizen)';
 		$strings['NoTitleLabel'] = '(kein Titel)';
@@ -225,7 +225,7 @@ class de_de extends en_us
 		$strings['SignedInAs'] = 'Angemeldet als';
 		$strings['NotSignedIn'] = 'Sie sind nicht angemeldet';
 		$strings['ReservationTitle'] = 'Titel des Werkstattauftrags';
-		$strings['ReservationDescription'] = 'Beschreibung des Werkstattauftrags';
+		$strings['ReservationDescription'] = 'Informationen zu: Fahrgestell';
 		$strings['ResourceList'] = 'Zu reservierende Ressourcen';
 		$strings['Accessories'] = 'Ersatzteile';
 		$strings['InvitationList'] = 'Eingeladene';
@@ -479,11 +479,11 @@ class de_de extends en_us
 		$strings['ResourceGroupHelp2'] = ' Rechtsklick auf einen Ressourcengruppennamen für weitere Aktionen.';
 		$strings['ResourceGroupHelp3'] = 'Mit Drag & Drop Ressourcen zu Gruppen hinzufügen.';
 		$strings['ResourceGroupWarning'] = 'Bei Verwendung von Ressourcengruppen muss jede Ressource zumindest einer Gruppe zugeordnet werden. Nicht zugeordnete Ressourcen können nicht reserviert werden.';
-		$strings['ResourceType'] = 'Ressourcentyp';
+		$strings['ResourceType'] = 'Niederlassung';
 		$strings['AppliesTo'] = 'Betrifft';
 		$strings['UniquePerInstance'] = 'Einzigartig pro Instanz';
-		$strings['AddResourceType'] = 'Ressourcentyp hinzufügen';
-		$strings['NoResourceTypeLabel'] = '(kein Ressourcentyp gesetzt)';
+		$strings['AddResourceType'] = 'Niederlassung hinzufügen';
+		$strings['NoResourceTypeLabel'] = '(keine Niederlassung definiert)';
 		$strings['ClearFilter'] = 'Filter löschen';
 		$strings['MinimumCapacity'] = 'Minimale Kapazität';
 		$strings['Color'] = 'Farbe';
@@ -517,7 +517,7 @@ class de_de extends en_us
 		$strings['UnavailableAllDay'] = 'Ganzer Tag nicht verfügbar';
 		$strings['AvailableUntil'] = 'Verfügbar bis';
 		$strings['AvailableBeginningAt'] = 'Verfügbar ab';
-		$strings['AllResourceTypes'] = 'Alle Ressourcentypen';
+		$strings['AllResourceTypes'] = 'Alle Niederlassungen';
 		$strings['AllResourceStatuses'] = 'Alle Ressourcen-Statusangaben';
 		$strings['AllowParticipantsToJoin'] = 'Erlaube Teilnehmern, beizutreten';
 		$strings['JoinThisReservation'] = 'Diesem Werkstattauftrag hinzufügen';
