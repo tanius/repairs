@@ -208,7 +208,7 @@ class de_de extends en_us
 		$strings['QuotaEnforcement'] = '%s %s erzwungen';
 		$strings['reservations'] = 'Werkstattaufträge';
 		$strings['reservation'] = 'Werkstattauftrag';
-		$strings['ChangeCalendar'] = 'Kalender ändern';
+		$strings['ChangeCalendar'] = 'Zeige Werkstattplan oder Ressource:';
 		$strings['AddQuota'] = 'Zeitkontingent hinzufügen';
 		$strings['FindUser'] = 'Benutzer finden';
 		$strings['Created'] = 'Erzeugt';
