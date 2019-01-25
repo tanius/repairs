@@ -47,6 +47,7 @@ function Calendar(opts) {
             eventRender: function (event, element, view) {
                 element.attachReservationPopup(event.id);
             },
+            height: 'auto',
             dayClick: dayClick,
             dayNames: _options.dayNames,
             dayNamesShort: _options.dayNamesShort,
