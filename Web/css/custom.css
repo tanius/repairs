@@ -36,3 +36,26 @@
 #navFindAReservation {
   display: none;
 }
+
+/* More compact rendering of the calendar chooser rows. */
+/* (Note: #select2-calendarFilter-results only exists while the dropdown is open.) */
+#select2-calendarFilter-results .select2-results__option {
+  padding: 2px;
+  line-height: 12px;
+}
+
+/* Additional formatting for the resources in the calendar chooser dropdown. */
+#select2-calendarFilter-results .select2-results__option .schedule {
+  font-size: 14px;
+  line-height: 19px;
+  color: #333333;
+  font-weight: bold;
+}
+
+/* Additional formatting for the resources in the calendar chooser dropdown. */
+#select2-calendarFilter-results .select2-results__option .resource {
+  font-size: 12px;
+  line-height: 14px;
+  color: #666666;
+}
+
