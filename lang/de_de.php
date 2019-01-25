@@ -208,7 +208,7 @@ class de_de extends en_us
 		$strings['QuotaEnforcement'] = '%s %s erzwungen';
 		$strings['reservations'] = 'Werkstattaufträge';
 		$strings['reservation'] = 'Werkstattauftrag';
-		$strings['ChangeCalendar'] = 'Zeige Werkstattplan oder Ressource:';
+		$strings['ChangeCalendar'] = 'Zeige Werkstattplan:';
 		$strings['AddQuota'] = 'Zeitkontingent hinzufügen';
 		$strings['FindUser'] = 'Benutzer finden';
 		$strings['Created'] = 'Erzeugt';
@@ -321,7 +321,7 @@ class de_de extends en_us
 		$strings['WhoCanManageThisSchedule'] = 'Wer darf diesen Termin verwalten?';
 		$strings['AllQuotas'] = 'Alle Zeitkontingente';
 		$strings['QuotaReminder'] = 'Beachte: Zeitkontingente werden basierend auf der Zeitzone des Werkstattplans erzwungen';
-		$strings['AllReservations'] = 'Alle Werkstattaufträge';
+		$strings['AllReservations'] = 'Alle Werkstattpläne';
 		$strings['PendingReservations'] = 'Anstehende Werkstattaufträge';
 		$strings['Approving'] = 'Bestätigen';
 		$strings['MoveToSchedule'] = 'Zum Werkstattplan verschieben';
@@ -718,7 +718,7 @@ class de_de extends en_us
 		$strings['FindAnOpening'] = 'Einen Anfang finden';
 		$strings['OpenInvitations'] = 'Offene Einladungen';
 		$strings['MyCalendar'] = 'Meine Werkstattaufträge';
-		$strings['ResourceCalendar'] = 'Alle Werkstattaufträge';
+		$strings['ResourceCalendar'] = 'Alle Werkstattpläne';
 		$strings['Reservation'] = 'Neuer Werkstattauftrag';
 		$strings['Install'] = 'Installation';
 		$strings['ChangePassword'] = 'Passwort ändern';
