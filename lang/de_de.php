@@ -102,7 +102,7 @@ class de_de extends en_us
 		$strings['Error'] = 'Fehler';
 		$strings['ReturnToPreviousPage'] = 'Zurück zur vorigen Seite';
 		$strings['UnknownError'] = 'Unbekannter Fehler';
-		$strings['InsufficientPermissionsError'] = 'Sie haben keinen Zugriff auf diese Ressource.';
+		$strings['InsufficientPermissionsError'] = 'Sie haben nicht die notwendigen Rechte, um Werkstattaufträge in diesem Werkstattplan anzulegen. Bitte wählen Sie einen anderen Werkstattplan aus und versuchen Sie es erneut.';
 		$strings['MissingReservationRessourceError'] = 'Keine Ressource ausgewählt';
 		$strings['MissingReservationScheduleError'] = 'Kein Werkstattplan ausgewählt';
 		$strings['DoesNotRepeat'] = 'Nicht wiederholend';
