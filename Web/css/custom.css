@@ -16,6 +16,11 @@
   display: none;
 }
 
+/* Hide the "Alle Werkstattpläne" calendar link, as we have now menu items pointing to the specific calendars. */
+#navResourceCalendar {
+  display: none;
+}
+
 /* Hide the "Schedule -> My Calendar" menu item. It is confusing as people will wonder why the 
    calendar is empty when they accidentally arrive here. */
 #navMyCalendar {

@@ -182,6 +182,7 @@ class de_de extends en_us
 		$strings['AddUser'] = 'Benutzer hinzufügen';
 		$strings['InviteUsers'] = 'Benutzer einladen';
 		$strings['Schedule'] = 'Werkstattplan';
+		$strings['Schedules'] = 'Werkstattpläne';
 		$strings['AddResource'] = 'Ressource hinzufügen';
 		$strings['Capacity'] = 'Kapazität';
 		$strings['Access'] = 'Zugriff';

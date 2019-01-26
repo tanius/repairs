@@ -188,13 +188,27 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                     {if $LoggedIn}
                         <li id="navDashboard"><a href="{$Path}{Pages::DASHBOARD}">{translate key="Dashboard"}</a></li>
                         <li class="dropdown" id="navScheduleDropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Schedule"} <b
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Schedules"} <b
                                         class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li id="navBookings"><a href="{$Path}{Pages::SCHEDULE}">{translate key="Bookings"}</a>
                                 </li>
                                 <li id="navResourceCalendar"><a
-                                            href="{$Path}{Pages::CALENDAR}">{translate key="ResourceCalendar"}</a></li>
+                                    href="{$Path}{Pages::CALENDAR}">{translate key="ResourceCalendar"}</a></li>
+				<li id="navResourceCalendar8"><a
+                                    href="{$Path}{Pages::CALENDAR}?sid=8">Abrollcontainer Gießen</a></li>
+                               <li id="navResourceCalendar10"><a
+                                    href="{$Path}{Pages::CALENDAR}?sid=10">Abrollpressen Gießen</a></li>
+                               <li id="navResourceCalendar8"><a
+                                    href="{$Path}{Pages::CALENDAR}?sid=7">Absetzcontainer Gießen</a></li>
+                               <li id="navResourceCalendar8"><a
+                                    href="{$Path}{Pages::CALENDAR}?sid=9">Absetzpressen Gießen</a></li>
+                               <li id="navResourceCalendar8"><a
+                                    href="{$Path}{Pages::CALENDAR}?sid=13">Fuhrpark Büdingen</a></li>
+                               <li id="navResourceCalendar8"><a
+                                    href="{$Path}{Pages::CALENDAR}?sid=1">Fuhrpark Gießen</a></li>
+
+
                                 <li id="navMyCalendar"><a
                                             href="{$Path}{Pages::MY_CALENDAR}">{translate key="MyCalendar"}</a></li>
                                 <!--<li class="menuitem"><a href="#">{translate key="Current Status"}</a></li>-->
