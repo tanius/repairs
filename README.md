@@ -16,8 +16,9 @@ Of course, REPAIRS is released under the same GPL3 license as Booked Scheduler. 
 
 ## 2. Installation instructions
 
-[Full install instructions](readme_installation.md)\
-[Upgrading](readme_installation.md#upgrading)
+[Installation instructions](README.Installation.md)
+
+[Upgrading instructions](README.Installation.md#3-upgrading)
 
 
 ## 3. General Application Help
