@@ -275,7 +275,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 								<a class="update changeContact" href="#"><span class="fa fa-pencil-square-o"></span></a>
 							</div>
 							<div>
-								{translate key='Description'} <a class="update changeDescription" href="#"><span
+								{translate key='ResourceDescription'} <a class="update changeDescription" href="#"><span
 											class="fa fa-pencil-square-o"></span></a>
 								{if $resource->HasDescription()}
 									{assign var=description value=$resource->GetDescription()}
@@ -289,7 +289,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 										{if $resource->HasDescription()}
 											{$description}
 										{else}
-											{translate key='NoDescriptionLabel'}
+											{translate key='NoResourceDescriptionLabel'}
 										{/if}
 									</div>
 								{/strip}
@@ -1475,11 +1475,11 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 			});
 
 			$('.descriptionValue').editable({
-				url: updateUrl + '{ManageResourcesActions::ActionChangeDescription}', emptytext: '{{translate key='NoDescriptionLabel'}|escape:'javascript'}'
+				url: updateUrl + '{ManageResourcesActions::ActionChangeDescription}', emptytext: '{{translate key='NoResourceDescriptionLabel'}|escape:'javascript'}'
 			});
 
 			$('.notesValue').editable({
-				url: updateUrl + '{ManageResourcesActions::ActionChangeNotes}', emptytext: '{{translate key='NoDescriptionLabel'}|escape:'javascript'}'
+				url: updateUrl + '{ManageResourcesActions::ActionChangeNotes}', emptytext: '{{translate key='NoResourceDescriptionLabel'}|escape:'javascript'}'
 			});
 
 			$('.resourceAdminValue').editable({

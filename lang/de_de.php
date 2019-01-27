@@ -152,10 +152,12 @@ class de_de extends en_us
 		$strings['NoLocationLabel'] = '(keine Position festgelegt)';
 		$strings['Contact'] = 'Kontakt';
 		$strings['NoContactLabel'] = '(keine Kontaktinformationen)';
-		$strings['Description'] = 'Fahrgestell';
-		$strings['NoDescriptionLabel'] = '(keine Informationen zu: Fahrgestell)';
-		$strings['Notes'] = 'Notizen';
-		$strings['NoNotesLabel'] = '(keine Notizen)';
+		$strings['Description'] = 'Beschreibung';
+		$strings['ResourceDescription'] = 'Fahrgestell';
+		$strings['NoDescriptionLabel'] = '(keine Beschreibung)';
+		$strings['NoResourceDescriptionLabel'] = '(keine Informationen zu: Fahrgestell)';
+		$strings['Notes'] = 'Aufbau';
+		$strings['NoNotesLabel'] = '(keine Informationen zu: Aufbau)';
 		$strings['NoTitleLabel'] = '(kein Titel)';
 		$strings['UsageConfiguration'] = 'Reservierungskonfiguration';
 		$strings['ChangeConfiguration'] = 'Konfiguration ändern';

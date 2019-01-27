@@ -26,11 +26,11 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
         </div>
     {/if}
     <div class="description">
-        <span class="bold">{translate key=Description}</span>
+        <span class="bold">{translate key=ResourceDescription}</span>
         {if $description neq ''}
             {$description|html_entity_decode|url2link|nl2br}
         {else}
-            {translate key=NoDescriptionLabel}
+            {translate key=NoResourceDescriptionLabel}
         {/if}
         <br/>
         <span class="bold">{translate key=Notes}</span>
