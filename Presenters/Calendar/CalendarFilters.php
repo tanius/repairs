@@ -171,6 +171,21 @@ class CalendarFilter
 		return $this->selected;
 	}
 
+	/**
+	 * Determines if any subfilter of this filter is marked as the currently active one 
+	 * in the database (i.e. "selected").
+	 * 
+	 * @return bool
+	 */
+	public function SubfilterSelected()
+	{
+		foreach ($this->filters as $subfilter) {
+			if ($subfilter->Selected())
+				return true;
+		}
+		return false;
+	}
+
 	public function __construct($type, $id, $name, $selected)
 	{
 		$this->type = $type;

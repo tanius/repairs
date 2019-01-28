@@ -337,10 +337,12 @@ abstract class CommonCalendarPresenter extends ActionPresenter
         $user = $this->userRepository->LoadById($userSession->UserId);
         $calendarPreference = UserCalendarFilter::Deserialize($user->GetPreference(UserPreferences::CALENDAR_FILTER));
 
-        if (empty($selectedScheduleId)) {
+	/* The selected resource must be in the selected schedule, and must be set only if set 
+           by the user in the current request. Because, subsequent calendar.php?dr=events AJAX 
+           request will use both to load the calendar events. So always set both from GET 
+           parameters or both from session preferences, but not mixed. */
+        if (empty($selectedScheduleId) and empty($selectedResourceId)) {
             $selectedScheduleId = $calendarPreference->ScheduleId;
-        }
-        if (empty($selectedResourceId)) {
             $selectedResourceId = $calendarPreference->ResourceId;
         }
         if (empty($selectedGroupId) && empty($selectedResourceId)) {
