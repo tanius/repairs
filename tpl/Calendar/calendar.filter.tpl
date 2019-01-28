@@ -47,7 +47,6 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 	$(function(){
 		$('#calendarFilter').select2({
 			width: '300px',
-			/* containerCssClass: 'calendarFilter', */
                         templateResult: function(result) {
 				// Return pure text elements unchanged, as we can't use them.
 				if (!result.element) {

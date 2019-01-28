@@ -89,7 +89,7 @@ In the following, version numbers `n.n.n` are release notes of official Booked S
 -   Bugfixes
 
 
-#### Version 2.6.4
+### Version 2.6.4
 
 -   Use resource color on availability dashboard
 -   Display reservations for multiple resources as one item on dashboard
