@@ -368,7 +368,7 @@ class de_de extends en_us
 		$strings['SubscriptionsAreDisabled'] = 'Das Abonnieren des Kalenders wurde vom Administrator deaktiviert';
 		$strings['NoResourceAdministratorLabel'] = '(Kein Ressourcen-Administrator)';
 		$strings['WhoCanManageThisResource'] = 'Wer darf diese Ressource verwalten?';
-		$strings['ResourceAdministrator'] = 'Ressourcen-Administrator';
+		$strings['ResourceAdministrator'] = 'Ressourcen-Administratoren';
 		$strings['Private'] = 'Privat';
 		$strings['Accept'] = 'Akzeptieren';
 		$strings['Decline'] = 'Ablehnen';
@@ -401,7 +401,7 @@ class de_de extends en_us
 		$strings['AttachFile'] = 'Datei hinzufügen';
 		$strings['Maximum'] = 'max';
 		$strings['NoScheduleAdministratorLabel'] = 'Kein Termin-Administrator';
-		$strings['ScheduleAdministrator'] = 'Termin-Administrator';
+		$strings['ScheduleAdministrator'] = 'Termin-Administratoren';
 		$strings['Total'] = 'Total';
 		$strings['QuantityReserved'] = 'Reservierte Menge';
 		$strings['AllAccessories'] = 'Alle Ersatzteile';
