@@ -117,7 +117,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 				<div class="col-xs-12 col-sm-6">
 					<div class="form-group">
 						<label class="reg" for="homepage">{translate key="DefaultPage"}</label>
-						<select {formname key='DEFAULT_HOMEPAGE'} id="homepage" class="form-control">
+						<select {formname key='DEFAULT_HOMEPAGE'} id="homepage" class="form-control" disabled>
 							{html_options values=$HomepageValues output=$HomepageOutput selected=$Homepage}
 						</select>
 					</div>
