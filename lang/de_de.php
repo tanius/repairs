@@ -732,12 +732,12 @@ class de_de extends en_us
 		$strings['NotificationPreferences'] = 'Benachrichtigungseinstellungen';
 		$strings['ManageAnnouncements'] = 'Ankündigungen';
 		$strings['Responsibilities'] = 'Zuständigkeiten';
-		$strings['GroupReservations'] = 'Gruppen';
-		$strings['ResourceReservations'] = 'Ressourcen-Reservierungen';
+		$strings['GroupReservations'] = 'Werkstattaufträge meiner Gruppen';
+		$strings['ResourceReservations'] = 'Werkstattaufträge meiner Ressourcen';
 		$strings['Customization'] = 'Anpassungen';
 		$strings['Attributes'] = 'Attribute';
 		$strings['AccountActivation'] = 'Benutzerkonto aktivieren';
-		$strings['ScheduleReservations'] = 'Werkstattaufträge planen';
+		$strings['ScheduleReservations'] = 'Werkstattaufträge meiner Kalender';
 		$strings['Reports'] = 'Berichte';
 		$strings['GenerateReport'] = 'Neuen Bericht erstellen';
 		$strings['MySavedReports'] = 'Meine gespeicherten Berichte';
