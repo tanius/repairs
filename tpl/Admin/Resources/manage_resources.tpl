@@ -451,8 +451,8 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 						<div class="form-group">
 							<label for="permissions">{translate key='ResourcePermissions'}</label>
 							<select class="form-control" {formname key=AUTO_ASSIGN} id="permissions">
-								<option value="0">{translate key="ResourcePermissionNotAutoGranted"}</option>
 								<option value="1">{translate key="ResourcePermissionAutoGranted"}</option>
+								<option value="0">{translate key="ResourcePermissionNotAutoGranted"}</option>
 							</select>
 						</div>
 						<div class="form-group">
