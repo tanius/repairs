@@ -25,6 +25,13 @@ class LoginRedirector
 {
 	public static function Redirect(ILoginBasePage $page)
 	{
+		/* New code: Always redirect to the user's default homepage.*/
+		$defaultId = ServiceLocator::GetServer()->GetUserSession()->HomepageId;
+		$url = Pages::UrlFromId($defaultId);
+		$page->Redirect(empty($url) ? Pages::UrlFromId(Pages::DEFAULT_HOMEPAGE_ID) : $url);
+
+		/* Original code: If possible, redirect to the page before last logout. */
+		/*
 		$redirect = $page->GetResumeUrl();
 
 		if (!empty($redirect))
@@ -37,5 +44,6 @@ class LoginRedirector
 			$url = Pages::UrlFromId($defaultId);
 			$page->Redirect(empty($url) ? Pages::UrlFromId(Pages::DEFAULT_HOMEPAGE_ID) : $url);
 		}
+		*/
 	}
 }
