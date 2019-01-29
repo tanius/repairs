@@ -67,7 +67,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 				<td>{$accessory->QuantityAvailable|default:'&infin;'}</td>
 				<td>
 					<a href="#"
-					   class="update resources">{if $accessory->AssociatedResources == 0}{translate key=All}{else}{$accessory->AssociatedResources}{/if}</a>
+					   class="update resources">{if $accessory->AssociatedResources == 0}{translate key=None}{else}{$accessory->AssociatedResources}{/if}</a>
 				</td>
 				<td class="action">
 					<a href="#" class="update edit"><span class="fa fa-pencil-square-o icon"></a> |

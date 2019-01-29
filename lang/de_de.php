@@ -254,7 +254,7 @@ class de_de extends en_us
 		$strings['Reset'] = 'Zurücksetzen';
 		$strings['FindGroup'] = 'Gruppe finden';
 		$strings['Manage'] = 'Verwalten';
-		$strings['None'] = 'Nichts';
+		$strings['None'] = 'Keine';
 		$strings['AddToOutlook'] = 'Zum Kalender hinzufügen';
 		$strings['Done'] = 'Fertig';
 		$strings['RememberMe'] = 'Angemeldet bleiben';

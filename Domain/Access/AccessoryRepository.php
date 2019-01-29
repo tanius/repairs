@@ -132,9 +132,14 @@ class AccessoryRepository implements IAccessoryRepository
 					$nv = explode(',', $pair);
 					$accessory->AddResource($nv[0], $nv[1], $nv[2]);
 				}
-			}
 
-			$accessories[] = $accessory;
+				/* Only load the accessory if it is assigned to 1+ resources.
+				   Unassigned accessories belong to no resource now, not to all.
+				   This hides incomplete accessories from non-admin users.
+				   (The accessory admin page uses a different way to list them, 
+				   still showing those excluded here.) */
+				$accessories[] = $accessory;
+			}
 		}
 
 		return $accessories;
