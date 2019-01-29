@@ -405,15 +405,11 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 									<input type="hidden" class="id" value="{$accessory->GetId()}"/>
 									<input type="hidden" class="resource-ids"
 										   value="{','|implode:$accessory->ResourceIds()}"/>
-									{if $accessory->GetQuantityAvailable() == 1}
-										<input type="checkbox" name="accessory{$accessory->GetId()}" value="1"
-											   size="3"/>
-									{else}
+									{* An earlier version showed a checkbox for accessories with stock level 1. Now, always showing a field to enter a number. *}
 										<input type="number" min="0" max="999"
 											   class="form-control input-sm accessory-quantity"
 											   name="accessory{$accessory->GetId()}"
 											   value="0" size="3"/>
-									{/if}
 								</td>
 								<td accessory-quantity-id="{$accessory->GetId()}"
 									accessory-quantity-available="{$accessory->GetQuantityAvailable()}">{$accessory->GetQuantityAvailable()|default:'&infin;'}</td>
