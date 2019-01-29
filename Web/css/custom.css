@@ -16,7 +16,7 @@
   display: none;
 }
 
-/* Hide the "Alle Werkstattpläne" calendar link, as we have now menu items pointing to the specific calendars. */
+/* Hide the "Werkstattpläne -> Alle Werkstattpläne" menu item, as we have now menu items pointing to the specific calendars. */
 #navResourceCalendar {
   display: none;
 }
@@ -39,6 +39,21 @@
 
 /* Hide the "Schedule -> Find Reservations" menu item until an issue with its templates is fixed upstream. */
 #navFindAReservation {
+  display: none;
+}
+
+/* Hide the "Responsibilities -> Users" menu item as it allows group admins to manage all users in their groups, incl. to delete their accounts incl. all their reservations. Too dangerous :-) */
+#navResponsibilitiesGAUsers {
+  display: none;
+}
+
+/* Hide the "Responsibilities -> Group Reservations" menu item, as it allows group admins to see reservations of other resource groups ("Niederlassungen)". */
+#navResponsibilitiesGAReservations {
+  display: none;
+}
+
+/* Hide the "Responsibilities -> Groups" menu item, as it allows group admins to manage permissions of the group. (While we only need people to be group admins to be able to see the full description of all reservations.) */
+#navResponsibilitiesGAGroups {
   display: none;
 }
 
