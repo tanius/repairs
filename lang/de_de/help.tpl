@@ -17,217 +17,157 @@ You should have received a copy of the GNU General Public License
 along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 *}
 {include file='globalheader.tpl'}
-<h1>Booked Scheduler Hilfe</h1>
+<h1>REPAIRS Hilfe</h1>
 
 <div id="help">
+
+
 <h2>Registrierung / Konto hinzufügen</h2>
 
-<p>Um Booked Schedule verwenden zu können, ist eine Registrierung erforderlich. (Wenn der Administrator die Registrierung aktiviert hat).
-Nachdem Ihr Konto registriert wurde, können Sie sich anmelden und haben Zugriff auf alle Ressourcen, die für Sie freigegeben wurden.
-</p>
+<p>Um REPAIRS verwenden zu können, ist ein Benutzerkonto erforderlich. Selbständige Registrierung neuer Konten ist in REPAIRS deaktiviert. Um ein neues Benuzterkonto anzulegen, muss ein Anwendungs-Admin das Formular unter "Admin → Benutzer → … → Benutzer hinzufügen" ausfüllen.</p>
 
-<h2>Buchen einer Reservierung</h2>
+<p>Nachdem Ihr Konto registriert wurde, können Sie sich anmelden und haben Zugriff auf alle Ressourcen, die für Sie freigegeben wurden.</p>
 
-<p>
-Unter dem Menüpunkt "Terminplan" finden Sie das Buchungselement in Form eines Wochenkalenders. 
-Dieser zeigt Ihnen die verfügbaren, reservierten und blockierten Slots (Zeitfenster) und ermöglicht es Ihnen, Ressourcen zu buchen.
-Sie können nur Ressourcen buchen, die für Sie freigegeben wurden.
-</p>
 
-<h3>Schnelles Buchen</h3>
+<h2>Werkstattaufträge</h2>
 
-<p>
-Auf der Buchungsseite finden Sie die Ressourcen, das Datum und die Uhrzeiten die Sie buchen können.
-Nach einem Klick auf das für Sie passende Zeitfenster können Sie die Details Ihrer Reservierung eintragen/ändern.
-Nach einem Druck auf die Schaltfläche "Anlegen" wird die Verfügbarkeit geprüft, die Reservierung gebucht wenn verfügbar und 
-eine Email mit Buchungs-Bestätigung/-Änderung/-Löschung gesendet.
-Weiterhin erhalten Sie eine Referenznummer für evt. Rückfragen.
-</p>
+<h3>Werkstattauftrag anlegen</h3>
 
-<p>
-Alle Änderungen an einer Reservierung werden erst wirksam, wenn Sie die Buchung speichern in dem Sie auf "Update" drücken.
-</p>
+<p>Ein Werkstattauftrag ist eine Reservierung eines Fahrzeugs oder einer anderen Ressource, so dass diese im gebuchten Zeitraum nicht im normalen Betriebsablauf zur Verfügung steht. Darüber hinaus speichert ein Werkstattauftrag welche Ersatzteile benötigt wurden, ggf. anfallende Dokumente, und ob der Auftrag bereits ausgeführt ist.</p>
 
-<p>
-Nur Anwendungsadministratoren können Reservierungen in der Vergangenheit eintragen.
-</p>
+<ol>
+  <li>Wählen Sie einen Werkstattplan unter dem Menüpunkt "Werkstattpläne".</li>
+  <li>Navigieren Sie zum richtigen Monat.</li>
+  <li>Klicken Sie mit der linken Maustaste auf den Tag, an dem Sie den Werkstattauftrag anlegen wollen.</li>
+  <li>Wählen Sie "Werkstattauftrag anlegen".</li>
+  <li>Klicken Sie auf "Ändern" hinter "Ressourcen" um das richtige Fahrzeug oder sonstige Ressource auszuwählen. Sie können mehrere Ressourcen gleichzeitig auswählen.</li>
+  <li>Klicken Sie auf "Hinzufügen" hinter "Ersatzteile" um benötigte Ersatzteile hinzuzufügen.</li>
+  <li>Füllen Sie die restlichen Felder aus und klicken Sie anschließend auf "Anlegen".</li>
+</ol>
 
-<h3>Mehrere Ressourcen</h3>
+<p>Sie können nur Werkstattaufträge für Ressourcen anlegen, die für Sie von einem Ressourcen-Admin freigegeben wurden.</p>
 
-<p>
-Sie können alle Ressourcen die Sie gleichzeitig benötigen, in einer einzigen Reservierung zusammen buchen. 
-Um eine weitere Ressource zu Ihrer Reservierung hinzuzufügen, klicken Sie auf "Weitere Ressourcen".
-Diesen Link finden Sie neben dem Namen der primären Ressource, die Sie reservieren möchten. 
-Nach dem Klick auf "Weitere Ressourcen" können Sie aus einer Liste mehr Ressourcen auswählen und durch einen Klick 
-auf die Schaltfläche "Fertig" hinzuzufügen. 
-</p>
+<p>Falls für Ihren Benutzer eingestellt wurde dass Ihre angelegten Werkstattaufträge bestätigt werden müssen, so wird Ihnen das nach Klick auf "Anlegen" für den angelegten Auftrag mitgeteilt.</p>
 
-<p>
-Um zusätzlich hinzugefügte Ressourcen von der Reservierung zu entfernen, klicken Sie auf
-"Weitere Ressourcen" und deaktivieren die Ressourcen wieder.
-</p>
+<p>Alle Änderungen an einer Reservierung werden erst wirksam, wenn Sie die Buchung speichern in dem Sie auf "Update" drücken.</p>
 
-<p>
-Zusätzliche Ressourcen unterstehen den gleichen Regeln wie die primäre Ressource.
-Dies bedeutet zum Beispiel, dass, wenn Sie versuchen eine 2-stündige Buchung mit Resource 1, 
-die eine maximale Buchungslänge von 3 Stunden hat und mit Resource 2, die
-eine maximale Buchungslänge von 1 Stunde hat, zu erstellen, Ihre Reservierung verweigert wird.
-</p>
+<p>Nur Anwendungsadministratoren können Reservierungen in der Vergangenheit eintragen.</p>
 
-<p>
-Die genauen Konfigurationsdaten einer Ressource werden Ihnen angezeigt, wenn Sie mit der Maus auf die Ressource zeigen.
-</p>
 
-<h3>Wiederkehrende Termine</h3>
+<h3>Werkstattauftrag auf "ausgeführt" setzen</h3>
 
-<p>
-Reservierungen können automatisch wiederholt werden. 
-Für die Wiederholung gibt es eine Reihe von verschieden Möglichkeiten.
-Alle Wiederholungsoptionen gelten inklusive des Bis-Datums.
-</p>
+<p>Ausgeführte Werkstattaufträge werden im Kalender in grün angezeigt und können so leicht von noch anstehenden Aufträgen unterschieden werden. Außerdem beeinflusst es die Ersatzteil-Lagerhaltung, einen Werkstattauftrag auf "ausgeführt" zu setzen.</p>
 
-<p>
-Die Optionen für die Wiederholung ermöglichen sehr flexible Wiederholungsmöglichkeiten. 
-Zum Beispiel: 
-"Täglich alle 2 Tage" erstellt Reservierungen für jeden zweiten Tag für Ihre angegebene Zeit.
-"Wöchentlich, jede 1. Woche am Montag, Mittwoch, Freitag" erstellt eine Reservierung an jedem dieser Tage in jeder Woche für Ihre angegebene Zeit.
-"Monatlich, jeden 3. Monat am 15. des Monats" ist genauso möglich wie 
-"Monatlich, jeden 3. Monat am 3. Samstag des Monats".
-</p>
+<p>Einen Werkstattauftrag auf "ausgeführt" zu setzen ist nur für dafür privilegierte einzelne Benutzer möglich. Ein Anwendungs-Admin kann weitere Benutzer dafür unter "Admin → Benutzerdefinierte Attribute" freischalten.</p>
+
+<p>Um einen Werkstattauftrag auf "ausgeführt" zu setzen:</p>
+
+<ol>
+  <li>Klicken Sie auf den Werkstattauftrag um ihn zum Bearbeiten zu öffnen.</li>
+  <li>Wenn kein Feld "Zusätzliche Attribute: Werkstattauftrag ausgeführt" angezeigt wird, so übertragen Sie zuerst den Werkstattauftrag an Ihren eigenen Benutzer. (Wie gesagt wird das Feld nicht für alle Benutzer gesammelt.) Klicken Sie dazu auf "Ändern" oben links hinter dem Namen des Benutzers, der den Werkstattauftrag angelegt hat.</li>
+  <li>Klicken Sie nun auf "Werkstattauftrag ausgeführt" um einen Haken in dieses Formularfeld zu setzen.</li>
+  <li>Klicken Sie abschließend oben rechts auf "Update" um die Änderungen zu speichern.</li>
+</ol>
+
+
+<h3>Wiederkehrende Werkstattaufträge</h3>
+
+<p>Werkstattaufträge können automatisch wiederholt werden. Für die Wiederholung gibt es eine Reihe von verschieden Möglichkeiten. Alle Wiederholungsoptionen gelten inklusive des Bis-Datums.</p>
+
+<p>Die Optionen für die Wiederholung ermöglichen flexible Wiederholungsmöglichkeiten. Zum Beispiel:</p>
+
+<ul>
+  <li>"Täglich alle 2 Tage" erstellt Reservierungen für jeden zweiten Tag für Ihre angegebene Zeit.</li>
+  <li>"Wöchentlich, jede 1. Woche am Montag, Mittwoch, Freitag" erstellt eine Reservierung an jedem dieser Tage in jeder Woche für Ihre angegebene Zeit.</li>
+  <li>"Monatlich, jeden 3. Monat am 15. des Monats" ist genauso möglich wie "Monatlich, jeden 3. Monat am 3. Samstag des Monats".</li>
+</ul>
+
 
 <h3>Weitere Teilnehmer</h3>
 
-<p>
-Wenn der Administrator die Option "Teilnehmer einladen" freigeschaltet hat, können Sie auch weitere Teilnehmer 
-zu jeder Reservierung hinzufügen bzw. einladen.
-Hinzugefügte Teilnehmer werden in der Teilnehmerliste der Reservierung eingetragen und erhalten eine Email.
-Eingeladene Teilnehmer erhalten eine Einladung per E-Mail und haben dann die Möglichkeit, die Einladung anzunehmen oder abzulehnen.
-Nach Annahme einer Einladung wird der Benutzer zur Teilnehmerliste hinzugefügt. 
-Nach einer Absage wird der Benutzer von der Einladungsliste gelöscht.
-</p>
+<p>Mit dem Feld "Teilnehmerliste" können Sie auch weitere Teilnehmer zu jeder Reservierung hinzufügen bzw. einladen. Dies ist dazu gedacht, Personen zu informieren für die ein Werkstattauftrag außerdem relevant ist. Zum Beispiel Werkstattmitarbeiter, die daran arbeiten sollen.</p>
 
-<p>
-Die Gesamtzahl der Teilnehmer wird durch die Kapazität der Ressource begrenzt.
-</p>
+<p>Hinzugefügte Teilnehmer werden in der Teilnehmerliste der Reservierung eingetragen und erhalten eine Email.</p>
+
 
 <h3>Zubehör</h3>
 
-<p>
-Zubehör sind Objekte, die man zu einer Reservierung hinzufügen und mit der Ressouce zusammen nutzen kann.
-Zum Beispiel Projektoren oder Stühle.
-Um Zubehör für Ihre Reservierung hinzuzufügen, klicken Sie auf den Link Zubehör "Hinzufügen".
-Nun können Sie das Zubehör und die erforderliche Menge des Zubehörs auswählen bzw. eintragen.
-Die verfügbare Menge des Zubehörs ist abhängig von möglicherweise bereits reservierten Zubehörteilen.
-</p>
+<p>Ersatzteile können einem Werkstattauftrag zugeordnet werden. Zu jedem Werkstattauftrag können nur solche Ersatzteile zugeordnet werden, die mit den gebuchten Fahrzeugen / sonstigen Ressourcen kompatibel sind.</p>
 
-<h3>Buchen im Namen anderer</h3>
+<p>Die Ersatzteil-Verwaltung dient der Lagerhaltung. Jeder Werkstattauftrag bei dem "Werkstattauftrag ausgeführt" gesetzt ist 
+"verbraucht" die diesem zugeordneten Ersatzteile. Legt man nun einen Werkstattauftrag an, ist der verfügbare Lagerbestand des Ersatzteils entsprechend geringer. Wird der Lagerbestand zu gering, kann rechtzeitig nachbestellt werden.</p>
 
-<p>
-Anwendungsadministratoren und Gruppenadministratoren können Reservierungen für andere Nutzer zu buchen, 
-indem Sie auf den Link "Ändern" rechts neben dem Namen des Benutzers klicken.
-</p>
+<p>Dieses System "Ersatzteilverbrauch bei Ausführung des Werkstattauftrags" bedeutet aber auch, dass Ersatzteile durch geplante Werkstattaufträge <b>nicht reserviert werden</b> können. Außerdem dürfen ausgeführte Werkstattaufträge <b>keinesfalls gelöscht werden</b>, weil dies die darin "verbrauchten" Ersatzteile dann wieder dem Lagerbestand zurechnen würde.</p>
 
-<p>
-Anwendungsadministratoren und Gruppenadministratoren können auch Reservierungen anderer Benutzer ändern und löschen.
-</p>
 
-<h2>Aktualisieren einer Reservierung</h2>
+<h3>Werkstattaufträge im Namen anderer</h3>
 
-<p>
-Sie können jede Reservierung die Sie erstellt haben oder die auf Ihrem Namen erstellt wurde, ändern.
-</p>
+<p>Anwendungs-Administratoren und Gruppen-Administratoren können Werkstattaufträge für andere Nutzer anlegen, 
+indem Sie im Formular auf den Link "Ändern" rechts neben dem Namen des Benutzers klicken.</p>
 
-<h3>Aktualisieren von wiederholten Reservierungen (Serienreservierung)</h3>
 
-<p>
-Wenn eine Buchung mit Wiederholung erstellt wird, dann handelt es sich um einer Serienreservierung.
-Nachdem Sie Änderungen vorgenommen haben und die Reservierung aktualisieren möchten, werden
-Sie aufgefordert, die Instanzen der Serie auszuwählen, für die Sie die Änderungen vornehmen möchten.
-Sie haben verschiedene Auswahlmöglichkeiten.
-</p>
-<p>
-Sie können Ihre Änderungen an der Instanz anwenden, die Sie gerade sehen (nur an dieser Instanz) 
-und alle anderen Instanzen werden nicht verändert.
-Sie können Ihre Änderungen an allen Instanzen anwenden, die noch nicht abgelaufen sind.
-Sie können Ihre Änderungen an allen zukünftigen Instanzen ab der und inklusive der gerade betrachteten Instanz durchführen lassen.
-</p>
+<h3>Aktualisieren eines Werkstattauftrags</h3>
 
-<p>
-Nur Anwendungsadministratoren können Reservierungen in der Vergangenheit verändern.
-</p>
+<p>Sie können jeden Werkstattauftrag den Sie erstellt haben oder der auf Ihrem Namen erstellt wurde, ändern.</p>
 
-<h2>Löschen einer Reservierung</h2>
+<p>Anwendungs-Administratoren und Gruppen-Administratoren können auch Reservierungen anderer Benutzer ändern und löschen.</p>
 
-<p>
-Das löschen einer Reservierung entfernt sie komplett aus dem Zeitplan. Sie wird in Booked Schedule nirgends mehr sichtbar sein.
-</p>
+<p>Nur Anwendungsadministratoren können Reservierungen in der Vergangenheit verändern.</p>
 
-<h3>Löschen von Wiederholungsbuchungen</h3>
 
-<p>
-Ähnlich wie bei der "Aktualisierung einer Wiederholungsreservierung" können Sie beim Löschen 
-auswählen, welche Instanzen Sie löschen möchten.
-</p>
+<h3>Aktualisieren von wiederholten Werkstattaufträgen</h3>
 
-<p>
-Nur Anwendungadministratoren können Reservierungen in der Vergangenheit löschen.
-</p>
+<p>Wenn eine Buchung mit Wiederholung erstellt wird, dann handelt es sich um einer Serienreservierung. Nachdem Sie Änderungen vorgenommen haben und die Reservierung aktualisieren möchten, werden Sie aufgefordert, die Instanzen der Serie auszuwählen, für die Sie die Änderungen vornehmen möchten. Sie haben verschiedene Auswahlmöglichkeiten.</p>
 
-<h2>
-Hinzufügen einer Reservierung zum eigenen Kalender (Outlook®, iCal, Mozilla, Lightning, Evolution)
-</h2>
+<ul>
+  <li>Sie können Ihre Änderungen an der Instanz anwenden, die Sie gerade sehen (nur an dieser Instanz) und alle anderen Instanzen werden nicht verändert.</li>
+  <li>Sie können Ihre Änderungen an allen Instanzen anwenden, die noch nicht abgelaufen sind.</li>
+  <li>Sie können Ihre Änderungen an allen zukünftigen Instanzen ab der und inklusive der gerade betrachteten Instanz durchführen lassen.</li>
+</ul>
 
-<p>
-Beim betrachten oder aktualisieren einer Reservierung finden Sie einen Kalender-Import Link.
-Wenn z.B. Outlook auf Ihrem Computer installiert ist, werden Sie gefragt ob Sie den Kalendereintrag importieren möchten.
-Wenn kein Kalenderprogramm installiert ist, werden Sie aufgefordert, eine ICS-Datei herunterzuladen. 
-Dies ist ein Standard-Kalender-Format. Sie können diese Datei verwenden, um die Reservierung in jede Anwendung zu importieren,
-die das iCalendar-Format unterstützt.</p>
 
-<h2>Abonnieren von Kalendern</h2>
+<h3>Löschen eines Werkstattauftrags</h3>
 
-<p>
-Terminkalender für Ressourcen und Benutzer können bei Bedarf veröffentlicht und abonniert werden. 
-Damit dies funktioniert, muss der Administrator einen Subscription-Schlüssel in der Konfigurationsdatei konfiguriert haben. 
-Um Termin- und Ressourcen-Kalender-Abonnements zu aktivieren, schalten Sie einfach Abonnements bei der Verwaltung des Terminplans oder der Ressource ein.
-Um den persönlichen Kalender für Abonnements freizugeben, öffnen Sie unter Terminplan -> Mein Kalender.
-Auf der rechten Seite oberhalb des Kalenders finden Sie einen Link zum Zulassen oder Ausschalten Ihres persönlichen Kalender Abonnements.
-</p>
+<p>Das löschen eines Werkstattauftrags entfernt diesen komplett aus dem Werkstattplan. Er wird in REPAIRS dann nirgends mehr sichtbar sein.</p>
 
-<p>
-Um einen Terminplan zu abonnieren, öffnen Sie Terminplan -> Ressourcen Kalender und wählen Sie den gewünschten Termin- oder Ressourcenkalender aus. 
-Auf der rechten Seite oberhalb des Kalenders finden Sie den Link "Kalender abonnieren".
-</p>
 
-<p>Um Ihren persönlichen Kalender zu abonnieren, öffnen Sie Terminplan -> Mein Kalender. 
-Auf der rechten Seite oberhalb des Kalenders finden Sie den Link "Kalender abonnieren".
-</p>
+<h3>Löschen von wiederholten Werkstattaufträgen</h3>
+
+<p>Ähnlich wie bei der "Aktualisierung von wiederholten Werkstattaufträgen" (siehe oben) können Sie beim Löschen auswählen, welche Instanzen Sie löschen möchten.</p>
+
+
+<h3>Hinzufügen eines Werkstattauftrags zu einem eigenen Kalender-Programmm</h3>
+
+<p>Beim Betrachten oder Aktualisieren eines Werkstattauftrags finden Sie einen Eintrag "Mehr → Zum Kalender hinzufügen". Wenn Sie diesen Eintrag auswählen und auf Ihrem Computer ein Kalender-Programm wie Outlook installiert ist, werden Sie gefragt ob Sie den Kalendereintrag importieren möchten. Wenn kein bekanntes Kalenderprogramm installiert ist, werden Sie aufgefordert, eine ICS-Datei herunterzuladen. Kalender-Programme sind zum Beispiel Outlook®, iCal, Mozilla Lightning, Evolution.</p>
+
+<p>ICS ist ein Standard-Kalender-Format. Sie können diese Datei verwenden, um die Reservierung in jede Anwendung zu importieren, die das iCalendar-Format unterstützt.</p>
+
+
+<h2>Abonnieren von Werkstattplänen</h2>
+
+<h3>Einen Werkstattplan oder Ressourcen-Kalender abonnieren</h3>
+
+<p>Zusätzlich zur oben beschriebenen Möglichkeit, einzelne Werkstattaufträge zu Ihrem Kalender-Programm hinzuzufügen, ist dies auch mit kompletten Werkstattplänen automatisiert möglich.</p>
+
+<p>Werkstattpläne und Kalender einzelner Ressourcen können bei Bedarf veröffentlicht und abonniert werden. Damit dies funktioniert, muss der Administrator einen Subscription-Schlüssel in der Konfigurationsdatei konfiguriert haben. Um Werkstattpläne oder Ressourcen-Kalender-Abonnements zu aktivieren, schalten Sie einfach "Abonnements" bei der Verwaltung des Werkstattplans oder der Ressource ein.</p>
+
+<p>Um einen Werkstattplan zu abonnieren, öffnen Sie den Werkstattplan. Auf der rechten Seite oberhalb des Kalenders finden Sie dann den Link "Kalender abonnieren". (Dieser Link ist aktuell in REPAIRS versteckt, kann aber von einem Administrator durch CSS bei Bedarf wieder sichbar gemacht werden.)</p>
+
 
 <h3>Kalender Programme (Outlook&reg;, iCal, Mozilla Lightning, Evolution)</h3>
 
-<p>
-In den meisten Fällen genügt ein Klick auf "Kalender abonnieren", um automatisch ein Abonnement in Ihrem Kalender-Programm einzurichten. 
-Falls Outlook es nicht automatisch hinzufügt, öffnen Sie die Kalenderansicht, dann rechts auf Meine Kalender und wählen Sie Hinzufügen Kalender -> Aus dem Internet. 
-Fügen Sie die URL ein, die Sie unter "Kalender Abonnieren" in Booked Schedule gedruckt finden.
-</p>
+<p>In den meisten Fällen genügt ein Klick auf "Kalender abonnieren", um automatisch ein Abonnement in Ihrem Kalender-Programm einzurichten. Falls Outlook es nicht automatisch hinzufügt, öffnen Sie die Kalenderansicht, dann rechts auf Meine Kalender und wählen Sie "Hinzufügen → Kalender → Aus dem Internet". Fügen Sie die URL ein, die Sie unter "Kalender Abonnieren" in REPAIRS angezeigt finden.</p>
+
 
 <h3>Google&reg; Kalender</h3>
 
-<p>
-Öffnen Sie die Google "Kalender-Einstellungen". 
-Klicken Sie auf die Registerkarte "Kalender". 
-Klicken Sie auf "In interessanten Kalendern suchen".
-Klicken Sie auf "Über URL hinzufügen".
-Fügen Sie die URL ein, die Sie unter "Kalender Abonnieren" in Booked Schedule gedruckt finden.
-</p>
-
-<h2>Quotenregelungen</h2>
-
-<p>
-Administratoren haben die Möglichkeit, Quotenregelungen für eine Vielzahl von Kriterien zu konfigurieren. 
-Wenn Sie bei Ihrer Reservierung gegen ein Quotensystem verstoßen, werden Sie benachrichtigt und die Reservierung
-wird verweigert. 
-</p>
+<ol>
+  <li>Öffnen Sie die Google "Kalender-Einstellungen".</li>
+  <li>Klicken Sie auf die Registerkarte "Kalender".</li>
+  <li>Klicken Sie auf "In interessanten Kalendern suchen".</li>
+  <li>Klicken Sie auf "Über URL hinzufügen".</li>
+  <li>Fügen Sie die URL ein, die Sie unter "Kalender Abonnieren" in Booked Schedule gedruckt finden.</li>
+</ol>
 
 </div>
 
