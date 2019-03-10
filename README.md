@@ -41,6 +41,7 @@ In the following, version numbers `n.n.n` are release notes of official Booked S
 -   Hacking the accessories feature to be a stock keeping system for spare parts
 -   CSS file `custom.css` for overwriting the CSS supplied by Booked Scheduler
 -   Various small UI adaptations
+-   German end user help file adaptations according to the actual use of the modified software
 
 
 ### Version 2.6.7
