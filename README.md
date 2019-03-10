@@ -16,14 +16,16 @@ Of course, REPAIRS is released under the same GPL3 license as Booked Scheduler. 
 
 ## 2. Installation instructions
 
-[Installation instructions](README.Installation.md)
-
-[Upgrading instructions](README.Installation.md#3-upgrading)
+-   [Installation instructions](README.Installation.md)
+-   [Upgrading instructions](README.Installation.md#3-upgrading)
 
 
 ## 3. General Application Help
 
-Application help is available from the Help menu item.
+Application help is available from the "Help" menu item. You can also read the corresponding content online:
+
+-   "[Help → Help](https://github.com/tanius/repairs/blob/master/lang/de_de/help.tpl)" content (heavily adapted for REPAIRS, so in German only)
+-   "[Help → Administration](https://github.com/tanius/repairs/blob/master/lang/en_us/help-admin.tpl)" content (not yet translated, so in English only)
 
 
 ## 4. Release Notes
