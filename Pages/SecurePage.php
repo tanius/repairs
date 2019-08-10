@@ -218,9 +218,9 @@ class SecurePageDecorator extends Page implements IPage
 		return $this->page->IsValid();
 	}
 
-	public function GetLastPage()
+	public function GetLastPage($defaultPage ='')
 	{
-		return $this->page->GetLastPage();
+		return $this->page->GetLastPage($defaultPage);
 	}
 
 	public function RegisterValidator($validatorId, $validator)
