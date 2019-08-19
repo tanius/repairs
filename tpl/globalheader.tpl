@@ -191,7 +191,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Schedules"} <b
                                         class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li id="navBookings"><a 
+                                <li id="navBookings"><a
                                     href="{$Path}{Pages::SCHEDULE}">{translate key="Bookings"}</a></li>
                                 <li id="navResourceCalendar"><a
                                     href="{$Path}{Pages::CALENDAR}">{translate key="ResourceCalendar"}</a></li>
@@ -207,6 +207,8 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                     href="{$Path}{Pages::CALENDAR}?sid=13">Fuhrpark Büdingen</a></li>
                                 <li id="navResourceCalendar1"><a
                                     href="{$Path}{Pages::CALENDAR}?sid=1">Fuhrpark Gießen</a></li>
+                                <li id="navResourceCalendar17"><a
+                                    href="{$Path}{Pages::CALENDAR}?sid=17">Fuhrpark Marburg</a></li>
                                 <li id="navResourceCalendar16"><a
                                     href="{$Path}{Pages::CALENDAR}?sid=16">Mietcenter</a></li>
                                 <li id="navMyCalendar"><a
