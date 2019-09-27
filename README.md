@@ -6,6 +6,8 @@ Booked Scheduler is one of the best – or, the best – open source resource sc
 
 Of course, REPAIRS is released under the same GPL3 license as Booked Scheduler. See file [LICENSE](LICENSE).
 
+So far, the user interface of REPAIRS is only provided in German. But a complete i18n system is in place, so translating it to your language of choice is a minor task.
+
 
 ## 1. Prerequisites
 
